@@ -324,7 +324,7 @@ this.FeatureBackground();
  testRunner.And("message \"Log into Hudl with your Organization\" is displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 37
- testRunner.When("login with organization email \"demo@test.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I login with organization email \"demo@test.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 38
  testRunner.Then("error message \"This account can\'t log in with an organization yet. Please log in " +
