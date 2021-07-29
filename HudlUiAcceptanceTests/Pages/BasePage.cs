@@ -63,7 +63,6 @@ namespace HudlUiTest.Pages
         //Send keys to element
         public void SendKeysToElement(IWebElement element, string keys)
         {
-            WaitForElementPresent(element);
             HoverOverElement(element);
             element.Clear();
             element.SendKeys(Keys.Clear);
