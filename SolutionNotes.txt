@@ -1,0 +1,5 @@
+1. To run tests please restore Nuget Packages
+
+2. Observations: username and password fields have possibly no 
+charactor limits so if user enters 5000 charactors into both fields 
+it freezes application for a while,
