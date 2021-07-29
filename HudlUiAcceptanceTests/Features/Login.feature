@@ -34,5 +34,5 @@ Scenario: 05. login with empty username details
 Scenario: 06. login with invalid organization email
 	Given I'm on organization login page
 	And message "Log into Hudl with your Organization" is displayed
-	When login with organization email "demo@test.com"
+	When I login with organization email "demo@test.com"
 	Then error message "This account can't log in with an organization yet. Please log in using your email and password." is displayed

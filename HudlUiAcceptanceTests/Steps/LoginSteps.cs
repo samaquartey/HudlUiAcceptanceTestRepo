@@ -19,8 +19,8 @@ namespace HudlUiTest.Steps
             GoToLoginPage();
         }
 
-        [When(@"login with organization email ""(.*)""")]
-        public void GivenLoginWithOrganizationEmail(string email = "")
+        [When(@"I login with organization email ""(.*)""")]
+        public void GivenILoginWithOrganizationEmail(string email = "")
         {
             LoginWithOrganizationEmail(email);
         }
