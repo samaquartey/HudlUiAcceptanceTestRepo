@@ -11,9 +11,15 @@ Scenario: 01. login with valid user details
 	Then I'm able to see my dashboard
 
 
-Scenario: 02. login with invalid username & invalid password
-	Given I login with username "test" & password "test"
+Scenario Outline: 02. login with invalid username & invalid password
+	Given I login with username "<username>" & password "<password>"
 	Then a message "We didn't recognize that email and/or password." is displayed
+
+	Examples: 
+	| username | password |
+	| test     | test     |
+	| 1234test | abe111   |
+	| 113344   | 00002    |
 
 
 Scenario: 03. login with empty username & password fields
