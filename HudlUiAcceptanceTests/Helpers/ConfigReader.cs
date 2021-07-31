@@ -1,6 +1,6 @@
 ﻿using System.Configuration;
 
-namespace HudlUiTest.Helpers
+namespace HudlUiAcceptanceTests.Helpers
 {
     public class ConfigReader
     {

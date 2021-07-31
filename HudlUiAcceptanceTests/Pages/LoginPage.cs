@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 
-namespace HudlUiTest.Pages
+namespace HudlUiAcceptanceTests.Pages
 {
     public class LoginPage : HomePage
     {

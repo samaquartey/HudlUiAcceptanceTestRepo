@@ -1,4 +1,4 @@
-﻿using HudlUiTest.TestHooks;
+﻿using HudlUiAcceptanceTests.TestHooks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Remote;
@@ -7,7 +7,7 @@ using System;
 using System.Net;
 using System.Threading;
 
-namespace HudlUiTest.Pages
+namespace HudlUiAcceptanceTests.Pages
 {
     public class BasePage : DriverManager
     {

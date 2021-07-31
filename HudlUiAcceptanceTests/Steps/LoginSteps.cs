@@ -1,10 +1,10 @@
 ﻿using HudlUiAcceptanceTests.Helpers;
-using HudlUiTest.Pages;
+using HudlUiAcceptanceTests.Pages;
 using NUnit.Framework;
 using OpenQA.Selenium.Remote;
 using TechTalk.SpecFlow;
 
-namespace HudlUiTest.Steps
+namespace HudlUiAcceptanceTests.Steps
 {
     [Binding]
     public class LoginSteps : LoginPage
@@ -41,7 +41,7 @@ namespace HudlUiTest.Steps
         public void GivenMessageIsDisplayed(string message)
         {
             WaitForElementPresent(HeaderTextElement);
-            Assert.AreEqual(HeaderTextElement.Text, message, 
+            Assert.AreEqual(HeaderTextElement.Text, message,
                 $"{HeaderTextElement.Text}" + " is not same as " + $"{message}");
         }
 
@@ -59,10 +59,10 @@ namespace HudlUiTest.Steps
         {
             WaitForElementPresent(ErrorMessageElement);
             Assert.IsTrue(ErrorMessageElement.Text.Contains(message), $"{message}" + " is not displayed");
-            Assert.IsTrue(!LoginElement.Enabled,"login element is not disabled");
+            Assert.IsTrue(!LoginElement.Enabled, "login element is not disabled");
 
             var loginElementColor = LoginElement.GetCssValue("background-Color");
-            Assert.AreNotEqual(ColorObject.LightBlue, loginElementColor, 
+            Assert.AreNotEqual(ColorObject.LightBlue, loginElementColor,
                 $"{loginElementColor}" + " should be not same as " + $"{ColorObject.LightBlue}");
         }
 
@@ -70,11 +70,11 @@ namespace HudlUiTest.Steps
         public void ThenErrorMessageIsDisplayed(string message)
         {
             WaitForElementPresent(OrganizationErrorMessageElement);
-            Assert.IsTrue(OrganizationErrorMessageElement.Text.Equals(message), 
+            Assert.IsTrue(OrganizationErrorMessageElement.Text.Equals(message),
                 $"{message}" + " is not displayed");
 
             var loginElementColor = LoginElement.GetCssValue("background-Color");
-            Assert.AreEqual(ColorObject.LightBlue, loginElementColor, 
+            Assert.AreEqual(ColorObject.LightBlue, loginElementColor,
                 $"{loginElementColor}" + " should be same as " + $"{ColorObject.LightBlue}");
         }
     }

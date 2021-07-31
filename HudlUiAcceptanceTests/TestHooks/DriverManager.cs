@@ -9,7 +9,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 
-namespace HudlUiTest.TestHooks
+namespace HudlUiAcceptanceTests.TestHooks
 {
     public class DriverManager
     {

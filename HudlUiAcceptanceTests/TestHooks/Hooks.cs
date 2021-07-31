@@ -2,7 +2,7 @@
 using System.Configuration;
 using TechTalk.SpecFlow;
 
-namespace HudlUiTest.TestHooks
+namespace HudlUiAcceptanceTests.TestHooks
 {
     [Binding]
     public class Hooks : DriverManager
