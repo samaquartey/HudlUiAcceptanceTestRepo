@@ -29,16 +29,11 @@ namespace HudlUiAcceptanceTests.TestHooks
                 KillChromeDriver();
         }
 
-        [BeforeScenario()]
+        [BeforeScenario]
         public void BeforeScenario()
         {
             Driver = LaunchBrowser(Browser);
             Container.RegisterInstanceAs(Driver);
-        }
-
-        [BeforeScenario()]
-        public void BeforeScenarioA()
-        {
         }
 
         [AfterScenario]
