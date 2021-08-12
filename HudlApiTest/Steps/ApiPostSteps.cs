@@ -44,7 +44,6 @@ namespace HudlApiTest.Steps
             try
             {
                 OpponentInformation = JsonConvert.DeserializeObject<OpponentInformation>(Response.Content);
-                Assert.Pass();
             }
             catch(Exception e)
             {
