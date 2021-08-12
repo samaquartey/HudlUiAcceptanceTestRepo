@@ -5,6 +5,7 @@ using HudlApiTest.ResponseObjects;
 using Newtonsoft.Json;
 using NUnit.Framework;
 using RestSharp;
+using System;
 using System.Collections.Generic;
 using System.Net;
 using TechTalk.SpecFlow;
@@ -14,6 +15,7 @@ namespace HudlApiTest.Steps
     [Binding]
     public class ApiPostSteps : CreateOpponentInformation
     {
+        public OpponentInformation OpponentInformation { get; set; }
         public NewOpponentPostObject NewOpponentPostObject { get; set; }
 
         public ApiPostSteps(NewOpponentPostObject newOpponentPostObject)
@@ -39,12 +41,20 @@ namespace HudlApiTest.Steps
             Assert.IsTrue(Response.StatusCode == HttpStatusCode.OK,"api post failed");
             Assert.IsTrue(Response.IsSuccessful == true, "api post was not successful");
 
-            var deserializeObject = JsonConvert.DeserializeObject<OpponentInformation>(Response.Content);
+            try
+            {
+                OpponentInformation = JsonConvert.DeserializeObject<OpponentInformation>(Response.Content);
+                Assert.Pass();
+            }
+            catch(Exception e)
+            {
+                Assert.Fail( e + " Unknown data present or mapping failed");
+            }
 
-            Assert.AreEqual(NewOpponentPostObject.gameId,deserializeObject.gameId, "game ids should be same");
-            Assert.AreEqual(NewOpponentPostObject.gameType, deserializeObject.gameType, "game type should be same");
-            Assert.AreEqual(NewOpponentPostObject.isHome, deserializeObject.IsHome, "is home should be same");
-            Assert.AreEqual(NewOpponentPostObject.sqlId, deserializeObject.sqlId, "sqlId should be same");
+            Assert.AreEqual(NewOpponentPostObject.gameId, OpponentInformation.gameId, "game ids should be same");
+            Assert.AreEqual(NewOpponentPostObject.gameType, OpponentInformation.gameType, "game type should be same");
+            Assert.AreEqual(NewOpponentPostObject.isHome, OpponentInformation.IsHome, "is home should be same");
+            Assert.AreEqual(NewOpponentPostObject.sqlId, OpponentInformation.sqlId, "sqlId should be same");
         }
 
 
