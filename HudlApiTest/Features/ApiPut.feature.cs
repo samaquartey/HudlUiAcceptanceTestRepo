@@ -100,26 +100,6 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table10 = new TechTalk.SpecFlow.Table(new string[] {
-                            "gameId",
-                            "sqlId",
-                            "date",
-                            "opponent",
-                            "opponentId",
-                            "gameType"});
-                table10.AddRow(new string[] {
-                            "1234567",
-                            "1234567",
-                            "2016-01-01T19:00:00",
-                            "TestOpponent",
-                            "123456",
-                            "0"});
-#line 5
- testRunner.Given("create opponent information with table details", ((string)(null)), table10, "Given ");
-#line hidden
-#line 8
- testRunner.Then("opponent data is created successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
                 TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
                             "gameId",
                             "sqlId",
@@ -128,6 +108,26 @@ this.ScenarioInitialize(scenarioInfo);
                             "opponentId",
                             "gameType"});
                 table11.AddRow(new string[] {
+                            "1234567",
+                            "1234567",
+                            "2016-01-01T19:00:00",
+                            "TestOpponent",
+                            "123456",
+                            "0"});
+#line 5
+ testRunner.Given("create opponent information with table details", ((string)(null)), table11, "Given ");
+#line hidden
+#line 8
+ testRunner.Then("opponent data is created successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+                TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
+                            "gameId",
+                            "sqlId",
+                            "date",
+                            "opponent",
+                            "opponentId",
+                            "gameType"});
+                table12.AddRow(new string[] {
                             "7654321",
                             "1234567",
                             "2016-01-01T19:00:00",
@@ -135,7 +135,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "123456",
                             "0"});
 #line 9
- testRunner.When("I update opponent information", ((string)(null)), table11, "When ");
+ testRunner.When("I update opponent information", ((string)(null)), table12, "When ");
 #line hidden
 #line 12
  testRunner.Then("opponent data in response has new game Id \"7654321\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -171,26 +171,6 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
-                            "gameId",
-                            "sqlId",
-                            "date",
-                            "opponent",
-                            "opponentId",
-                            "gameType"});
-                table12.AddRow(new string[] {
-                            "1234567",
-                            "1234567",
-                            "2016-01-01T19:00:00",
-                            "TestOpponent",
-                            "123456",
-                            "0"});
-#line 15
- testRunner.Given("create opponent information with table details", ((string)(null)), table12, "Given ");
-#line hidden
-#line 18
- testRunner.Then("opponent data is created successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
                 TechTalk.SpecFlow.Table table13 = new TechTalk.SpecFlow.Table(new string[] {
                             "gameId",
                             "sqlId",
@@ -200,13 +180,33 @@ this.ScenarioInitialize(scenarioInfo);
                             "gameType"});
                 table13.AddRow(new string[] {
                             "1234567",
+                            "1234567",
+                            "2016-01-01T19:00:00",
+                            "TestOpponent",
+                            "123456",
+                            "0"});
+#line 15
+ testRunner.Given("create opponent information with table details", ((string)(null)), table13, "Given ");
+#line hidden
+#line 18
+ testRunner.Then("opponent data is created successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+                TechTalk.SpecFlow.Table table14 = new TechTalk.SpecFlow.Table(new string[] {
+                            "gameId",
+                            "sqlId",
+                            "date",
+                            "opponent",
+                            "opponentId",
+                            "gameType"});
+                table14.AddRow(new string[] {
+                            "1234567",
                             "7654321",
                             "2016-01-01T19:00:00",
                             "TestOpponent",
                             "123456",
                             "0"});
 #line 19
- testRunner.When("I update opponent information", ((string)(null)), table13, "When ");
+ testRunner.When("I update opponent information", ((string)(null)), table14, "When ");
 #line hidden
 #line 22
  testRunner.Then("opponent data in response has new sql Id \"7654321\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -242,26 +242,6 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table14 = new TechTalk.SpecFlow.Table(new string[] {
-                            "gameId",
-                            "sqlId",
-                            "date",
-                            "opponent",
-                            "opponentId",
-                            "gameType"});
-                table14.AddRow(new string[] {
-                            "1234567",
-                            "1234567",
-                            "2016-01-01T19:00:00",
-                            "TestOpponent",
-                            "123456",
-                            "0"});
-#line 25
- testRunner.Given("create opponent information with table details", ((string)(null)), table14, "Given ");
-#line hidden
-#line 28
- testRunner.Then("opponent data is created successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
                 TechTalk.SpecFlow.Table table15 = new TechTalk.SpecFlow.Table(new string[] {
                             "gameId",
                             "sqlId",
@@ -271,13 +251,33 @@ this.ScenarioInitialize(scenarioInfo);
                             "gameType"});
                 table15.AddRow(new string[] {
                             "1234567",
+                            "1234567",
+                            "2016-01-01T19:00:00",
+                            "TestOpponent",
+                            "123456",
+                            "0"});
+#line 25
+ testRunner.Given("create opponent information with table details", ((string)(null)), table15, "Given ");
+#line hidden
+#line 28
+ testRunner.Then("opponent data is created successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+                TechTalk.SpecFlow.Table table16 = new TechTalk.SpecFlow.Table(new string[] {
+                            "gameId",
+                            "sqlId",
+                            "date",
+                            "opponent",
+                            "opponentId",
+                            "gameType"});
+                table16.AddRow(new string[] {
+                            "1234567",
                             "7654321",
                             "2016-01-01T19:00:00",
                             "TestOpponent",
                             "654321",
                             "0"});
 #line 29
- testRunner.When("I update opponent information", ((string)(null)), table15, "When ");
+ testRunner.When("I update opponent information", ((string)(null)), table16, "When ");
 #line hidden
 #line 32
  testRunner.Then("opponent data in response has new sql Id \"654321\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -313,26 +313,6 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table16 = new TechTalk.SpecFlow.Table(new string[] {
-                            "gameId",
-                            "sqlId",
-                            "date",
-                            "opponent",
-                            "opponentId",
-                            "gameType"});
-                table16.AddRow(new string[] {
-                            "1234567",
-                            "1234567",
-                            "2016-01-01T19:00:00",
-                            "TestOpponent",
-                            "123456",
-                            "0"});
-#line 35
- testRunner.Given("create opponent information with table details", ((string)(null)), table16, "Given ");
-#line hidden
-#line 38
- testRunner.Then("opponent data is created successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
                 TechTalk.SpecFlow.Table table17 = new TechTalk.SpecFlow.Table(new string[] {
                             "gameId",
                             "sqlId",
@@ -342,13 +322,33 @@ this.ScenarioInitialize(scenarioInfo);
                             "gameType"});
                 table17.AddRow(new string[] {
                             "1234567",
+                            "1234567",
+                            "2016-01-01T19:00:00",
+                            "TestOpponent",
+                            "123456",
+                            "0"});
+#line 35
+ testRunner.Given("create opponent information with table details", ((string)(null)), table17, "Given ");
+#line hidden
+#line 38
+ testRunner.Then("opponent data is created successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+                TechTalk.SpecFlow.Table table18 = new TechTalk.SpecFlow.Table(new string[] {
+                            "gameId",
+                            "sqlId",
+                            "date",
+                            "opponent",
+                            "opponentId",
+                            "gameType"});
+                table18.AddRow(new string[] {
+                            "1234567",
                             "7654321",
                             "2016-01-01T19:00:00",
                             "TestOpponentAbc",
                             "654321",
                             "0"});
 #line 39
- testRunner.When("I update opponent information", ((string)(null)), table17, "When ");
+ testRunner.When("I update opponent information", ((string)(null)), table18, "When ");
 #line hidden
 #line 42
  testRunner.Then("opponent data in response has new opponent \"TestOpponentAbc\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -384,26 +384,6 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table18 = new TechTalk.SpecFlow.Table(new string[] {
-                            "gameId",
-                            "sqlId",
-                            "date",
-                            "opponent",
-                            "opponentId",
-                            "gameType"});
-                table18.AddRow(new string[] {
-                            "1234567",
-                            "1234567",
-                            "2016-01-01T19:00:00",
-                            "TestOpponent",
-                            "123456",
-                            "0"});
-#line 47
- testRunner.Given("create opponent information with table details", ((string)(null)), table18, "Given ");
-#line hidden
-#line 50
- testRunner.Then("opponent data is created successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
                 TechTalk.SpecFlow.Table table19 = new TechTalk.SpecFlow.Table(new string[] {
                             "gameId",
                             "sqlId",
@@ -412,6 +392,26 @@ this.ScenarioInitialize(scenarioInfo);
                             "opponentId",
                             "gameType"});
                 table19.AddRow(new string[] {
+                            "1234567",
+                            "1234567",
+                            "2016-01-01T19:00:00",
+                            "TestOpponent",
+                            "123456",
+                            "0"});
+#line 47
+ testRunner.Given("create opponent information with table details", ((string)(null)), table19, "Given ");
+#line hidden
+#line 50
+ testRunner.Then("opponent data is created successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+                TechTalk.SpecFlow.Table table20 = new TechTalk.SpecFlow.Table(new string[] {
+                            "gameId",
+                            "sqlId",
+                            "date",
+                            "opponent",
+                            "opponentId",
+                            "gameType"});
+                table20.AddRow(new string[] {
                             "7654321",
                             "1234567",
                             "2016-01-01T19:00:00",
@@ -419,7 +419,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "123456",
                             "0"});
 #line 51
- testRunner.When("I update opponent information", ((string)(null)), table19, "When ");
+ testRunner.When("I update opponent information", ((string)(null)), table20, "When ");
 #line hidden
 #line 54
  testRunner.Then("opponent data update should fail with error", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -435,7 +435,7 @@ this.ScenarioInitialize(scenarioInfo);
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("06. Update opponent sql id - invalid sql id", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 56
+#line 57
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -455,26 +455,6 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table20 = new TechTalk.SpecFlow.Table(new string[] {
-                            "gameId",
-                            "sqlId",
-                            "date",
-                            "opponent",
-                            "opponentId",
-                            "gameType"});
-                table20.AddRow(new string[] {
-                            "1234567",
-                            "1234567",
-                            "2016-01-01T19:00:00",
-                            "TestOpponent",
-                            "123456",
-                            "0"});
-#line 57
- testRunner.Given("create opponent information with table details", ((string)(null)), table20, "Given ");
-#line hidden
-#line 60
- testRunner.Then("opponent data is created successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
                 TechTalk.SpecFlow.Table table21 = new TechTalk.SpecFlow.Table(new string[] {
                             "gameId",
                             "sqlId",
@@ -484,15 +464,35 @@ this.ScenarioInitialize(scenarioInfo);
                             "gameType"});
                 table21.AddRow(new string[] {
                             "1234567",
+                            "1234567",
+                            "2016-01-01T19:00:00",
+                            "TestOpponent",
+                            "123456",
+                            "0"});
+#line 58
+ testRunner.Given("create opponent information with table details", ((string)(null)), table21, "Given ");
+#line hidden
+#line 61
+ testRunner.Then("opponent data is created successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+                TechTalk.SpecFlow.Table table22 = new TechTalk.SpecFlow.Table(new string[] {
+                            "gameId",
+                            "sqlId",
+                            "date",
+                            "opponent",
+                            "opponentId",
+                            "gameType"});
+                table22.AddRow(new string[] {
+                            "1234567",
                             "abcdefgh",
                             "2016-01-01T19:00:00",
                             "TestOpponent",
                             "123456",
                             "0"});
-#line 61
- testRunner.When("I update opponent information", ((string)(null)), table21, "When ");
+#line 62
+ testRunner.When("I update opponent information", ((string)(null)), table22, "When ");
 #line hidden
-#line 64
+#line 65
  testRunner.Then("opponent data update should fail with error", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -506,7 +506,7 @@ this.ScenarioInitialize(scenarioInfo);
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("07. Update opponent id - invalid opponent id", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 66
+#line 68
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -526,26 +526,6 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table22 = new TechTalk.SpecFlow.Table(new string[] {
-                            "gameId",
-                            "sqlId",
-                            "date",
-                            "opponent",
-                            "opponentId",
-                            "gameType"});
-                table22.AddRow(new string[] {
-                            "1234567",
-                            "1234567",
-                            "2016-01-01T19:00:00",
-                            "TestOpponent",
-                            "123456",
-                            "0"});
-#line 67
- testRunner.Given("create opponent information with table details", ((string)(null)), table22, "Given ");
-#line hidden
-#line 70
- testRunner.Then("opponent data is created successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
                 TechTalk.SpecFlow.Table table23 = new TechTalk.SpecFlow.Table(new string[] {
                             "gameId",
                             "sqlId",
@@ -555,15 +535,35 @@ this.ScenarioInitialize(scenarioInfo);
                             "gameType"});
                 table23.AddRow(new string[] {
                             "1234567",
+                            "1234567",
+                            "2016-01-01T19:00:00",
+                            "TestOpponent",
+                            "123456",
+                            "0"});
+#line 69
+ testRunner.Given("create opponent information with table details", ((string)(null)), table23, "Given ");
+#line hidden
+#line 72
+ testRunner.Then("opponent data is created successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+                TechTalk.SpecFlow.Table table24 = new TechTalk.SpecFlow.Table(new string[] {
+                            "gameId",
+                            "sqlId",
+                            "date",
+                            "opponent",
+                            "opponentId",
+                            "gameType"});
+                table24.AddRow(new string[] {
+                            "1234567",
                             "7654321",
                             "2016-01-01T19:00:00",
                             "TestOpponent",
                             "qwertvvf",
                             "0"});
-#line 71
- testRunner.When("I update opponent information", ((string)(null)), table23, "When ");
+#line 73
+ testRunner.When("I update opponent information", ((string)(null)), table24, "When ");
 #line hidden
-#line 74
+#line 76
  testRunner.Then("opponent data update should fail with error", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -577,7 +577,7 @@ this.ScenarioInitialize(scenarioInfo);
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("08. Update opponent - invalid opponent", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 76
+#line 79
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -597,26 +597,6 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table24 = new TechTalk.SpecFlow.Table(new string[] {
-                            "gameId",
-                            "sqlId",
-                            "date",
-                            "opponent",
-                            "opponentId",
-                            "gameType"});
-                table24.AddRow(new string[] {
-                            "1234567",
-                            "1234567",
-                            "2016-01-01T19:00:00",
-                            "TestOpponent",
-                            "123456",
-                            "0"});
-#line 77
- testRunner.Given("create opponent information with table details", ((string)(null)), table24, "Given ");
-#line hidden
-#line 80
- testRunner.Then("opponent data is created successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
                 TechTalk.SpecFlow.Table table25 = new TechTalk.SpecFlow.Table(new string[] {
                             "gameId",
                             "sqlId",
@@ -626,15 +606,35 @@ this.ScenarioInitialize(scenarioInfo);
                             "gameType"});
                 table25.AddRow(new string[] {
                             "1234567",
+                            "1234567",
+                            "2016-01-01T19:00:00",
+                            "TestOpponent",
+                            "123456",
+                            "0"});
+#line 80
+ testRunner.Given("create opponent information with table details", ((string)(null)), table25, "Given ");
+#line hidden
+#line 83
+ testRunner.Then("opponent data is created successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+                TechTalk.SpecFlow.Table table26 = new TechTalk.SpecFlow.Table(new string[] {
+                            "gameId",
+                            "sqlId",
+                            "date",
+                            "opponent",
+                            "opponentId",
+                            "gameType"});
+                table26.AddRow(new string[] {
+                            "1234567",
                             "7654321",
                             "2016-01-01T19:00:00",
                             "111111",
                             "654321",
                             "0"});
-#line 81
- testRunner.When("I update opponent information", ((string)(null)), table25, "When ");
-#line hidden
 #line 84
+ testRunner.When("I update opponent information", ((string)(null)), table26, "When ");
+#line hidden
+#line 87
  testRunner.Then("opponent data update should fail with error", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -648,7 +648,7 @@ this.ScenarioInitialize(scenarioInfo);
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("09. Update all details with - invalid infomation", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 86
+#line 90
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -668,26 +668,6 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table26 = new TechTalk.SpecFlow.Table(new string[] {
-                            "gameId",
-                            "sqlId",
-                            "date",
-                            "opponent",
-                            "opponentId",
-                            "gameType"});
-                table26.AddRow(new string[] {
-                            "1234567",
-                            "1234567",
-                            "2016-01-01T19:00:00",
-                            "TestOpponent",
-                            "123456",
-                            "0"});
-#line 87
- testRunner.Given("create opponent information with table details", ((string)(null)), table26, "Given ");
-#line hidden
-#line 90
- testRunner.Then("opponent data is created successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
                 TechTalk.SpecFlow.Table table27 = new TechTalk.SpecFlow.Table(new string[] {
                             "gameId",
                             "sqlId",
@@ -696,16 +676,36 @@ this.ScenarioInitialize(scenarioInfo);
                             "opponentId",
                             "gameType"});
                 table27.AddRow(new string[] {
+                            "1234567",
+                            "1234567",
+                            "2016-01-01T19:00:00",
+                            "TestOpponent",
+                            "123456",
+                            "0"});
+#line 91
+ testRunner.Given("create opponent information with table details", ((string)(null)), table27, "Given ");
+#line hidden
+#line 94
+ testRunner.Then("opponent data is created successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+                TechTalk.SpecFlow.Table table28 = new TechTalk.SpecFlow.Table(new string[] {
+                            "gameId",
+                            "sqlId",
+                            "date",
+                            "opponent",
+                            "opponentId",
+                            "gameType"});
+                table28.AddRow(new string[] {
                             "000000",
                             "acvewsl",
                             "ggee01T19",
                             "demodemo",
                             "pppcees",
                             "0"});
-#line 91
- testRunner.When("I update opponent information", ((string)(null)), table27, "When ");
+#line 95
+ testRunner.When("I update opponent information", ((string)(null)), table28, "When ");
 #line hidden
-#line 94
+#line 98
  testRunner.Then("opponent data update should fail with error", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

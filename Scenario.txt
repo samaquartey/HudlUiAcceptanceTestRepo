@@ -1,0 +1,34 @@
+
+
+Hypothetical Scenario
+A coach logs into the Hudl.com web app and wants to access a schedule page that contains a list of opponent information, including dates and times of each game. The schedule page user interface (UI) layer calls a service, which calls a database to access the proper team and schedule data to display. We’re looking for the ability to think critically about how the UI interacts with a service API to correctly view, update, create, and remove schedule entries using the “Test Driven Development” process. A great API testing project will:
+•	Include a set of detailed test cases for each step of the workflow. Each case should explain the behaviour between what the coach might see and how the data is being retrieved from a backend service.
+•	Clearly define expected request parameters and response codes for each HTTP method based on valid and invalid inputs.
+•	Describe negative testing considerations, failure scenarios, or breaking points for each step of the following workflow.
+
+
+An example of a data object in this scenario is:
+
+
+{
+gameId: "1234567",
+sqlId: "1234567",
+date: "2016-01-01T19:00:00",
+opponent: "TestOpponent",
+opponentId: "123456",
+isHome: true,
+gameType: 0,
+categories: [ ]
+}
+
+
+You may want to consider the following HTTP methods and response codes:
+•	GET: On success, viewing a list of schedule entries returns a 200 OK status code
+•	PUT: On success, updating a single schedule entry returns a 200 OK status code
+•	POST: On success, creating a new schedule entry returns a 200 OK status code
+•	DELETE: On success, removing a schedule entry returns a 204 status code with no data object.
+•	500 - Internal Server Error
+•	200 - OK
+•	403 - Forbidden
+•	404 - Not Found
+•	401 - Unauthorized

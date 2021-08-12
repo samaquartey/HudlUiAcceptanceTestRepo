@@ -53,6 +53,7 @@ Scenario: 05. Update opponent game id - invalid game id
 	| 7654321 | 1234567 | 2016-01-01T19:00:00 | TestOpponent | 123456     | 0        |
 	Then opponent data update should fail with error
 
+
 Scenario: 06. Update opponent sql id - invalid sql id
 	Given create opponent information with table details
 	| gameId  | sqlId   | date                | opponent     | opponentId | gameType |
@@ -62,6 +63,7 @@ Scenario: 06. Update opponent sql id - invalid sql id
 	| gameId  | sqlId    | date                | opponent     | opponentId | gameType |
 	| 1234567 | abcdefgh | 2016-01-01T19:00:00 | TestOpponent | 123456     | 0        |
 	Then opponent data update should fail with error
+
 
 Scenario: 07. Update opponent id - invalid opponent id
 	Given create opponent information with table details
@@ -73,6 +75,7 @@ Scenario: 07. Update opponent id - invalid opponent id
 	| 1234567 | 7654321 | 2016-01-01T19:00:00 | TestOpponent | qwertvvf   | 0        |
 	Then opponent data update should fail with error
 
+
 Scenario: 08. Update opponent - invalid opponent
 	Given create opponent information with table details
 	| gameId  | sqlId   | date                | opponent     | opponentId | gameType |
@@ -82,6 +85,7 @@ Scenario: 08. Update opponent - invalid opponent
 	| gameId  | sqlId   | date                | opponent | opponentId | gameType |
 	| 1234567 | 7654321 | 2016-01-01T19:00:00 | 111111   | 654321     | 0        |
 	Then opponent data update should fail with error
+
 
 Scenario: 09. Update all details with - invalid infomation
 	Given create opponent information with table details

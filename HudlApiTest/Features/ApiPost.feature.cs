@@ -100,14 +100,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
                             "gameId",
                             "sqlId",
                             "date",
                             "opponent",
                             "opponentId",
                             "gameType"});
-                table5.AddRow(new string[] {
+                table6.AddRow(new string[] {
                             "1234567",
                             "1234567",
                             "2016-01-01T19:00:00",
@@ -115,7 +115,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "123456",
                             "0"});
 #line 5
- testRunner.Given("create opponent information with table details", ((string)(null)), table5, "Given ");
+ testRunner.Given("create opponent information with table details", ((string)(null)), table6, "Given ");
 #line hidden
 #line 8
  testRunner.Then("opponent data is created successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -153,14 +153,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
                             "gameId",
                             "sqlId",
                             "date",
                             "opponent",
                             "opponentId",
                             "gameType"});
-                table6.AddRow(new string[] {
+                table7.AddRow(new string[] {
                             "NNNNNN",
                             "1234567",
                             "2016-01-01T19:00:00",
@@ -168,7 +168,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "123456",
                             "0"});
 #line 13
- testRunner.Given("create opponent information with table details", ((string)(null)), table6, "Given ");
+ testRunner.Given("create opponent information with table details", ((string)(null)), table7, "Given ");
 #line hidden
 #line 16
  testRunner.Then("api post to create opponent information should error", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -204,14 +204,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
                             "gameId",
                             "sqlId",
                             "date",
                             "opponent",
                             "opponentId",
                             "gameType"});
-                table7.AddRow(new string[] {
+                table8.AddRow(new string[] {
                             "1234567",
                             "OOOOO",
                             "2016-01-01T19:00:00",
@@ -219,7 +219,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "123456",
                             "0"});
 #line 19
- testRunner.Given("create opponent information with table details", ((string)(null)), table7, "Given ");
+ testRunner.Given("create opponent information with table details", ((string)(null)), table8, "Given ");
 #line hidden
 #line 22
  testRunner.Then("api post to create opponent information should error", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -255,22 +255,22 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
                             "gameId",
                             "sqlId",
                             "date",
                             "opponent",
                             "opponentId",
                             "gameType"});
-                table8.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "1234567",
-                            "OOOOO",
+                            "1234567",
                             "2016-01-01T19:00:00",
                             "TestOpponent",
                             "00000222",
                             "0"});
 #line 25
- testRunner.Given("create opponent information with table details", ((string)(null)), table8, "Given ");
+ testRunner.Given("create opponent information with table details", ((string)(null)), table9, "Given ");
 #line hidden
 #line 28
  testRunner.Then("api post to create opponent information should error", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -280,12 +280,12 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("05. Create opponent information with invalid opponentId Id")]
-        public virtual void _05_CreateOpponentInformationWithInvalidOpponentIdId()
+        [NUnit.Framework.DescriptionAttribute("05. Create opponent information with invalid opponent")]
+        public virtual void _05_CreateOpponentInformationWithInvalidOpponent()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("05. Create opponent information with invalid opponentId Id", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("05. Create opponent information with invalid opponent", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 30
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -306,24 +306,118 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table10 = new TechTalk.SpecFlow.Table(new string[] {
                             "gameId",
                             "sqlId",
                             "date",
                             "opponent",
                             "opponentId",
                             "gameType"});
-                table9.AddRow(new string[] {
+                table10.AddRow(new string[] {
                             "1234567",
-                            "OOOOO",
+                            "1234567",
                             "2016-01-01T19:00:00",
-                            "TestOpponent",
+                            "11111111",
                             "00000222",
                             "0"});
 #line 31
- testRunner.Given("create opponent information with table details", ((string)(null)), table9, "Given ");
+ testRunner.Given("create opponent information with table details", ((string)(null)), table10, "Given ");
 #line hidden
 #line 34
+ testRunner.Then("api post to create opponent information should error", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("06. Create opponent information with data for all fields")]
+        [NUnit.Framework.TestCaseAttribute("1234567", "1234567", "2016-01-01T19:00:00", "TestOpponent", "123456", "0", null)]
+        [NUnit.Framework.TestCaseAttribute("1234567", "1234567", "2016-01-01T19:00:00", "TestOpponentA", "1234567", "0", null)]
+        [NUnit.Framework.TestCaseAttribute("1234567", "1234567", "2016-01-01T19:00:00", "TestOpponentB", "1234568", "0", null)]
+        [NUnit.Framework.TestCaseAttribute("1234567", "1234567", "2016-01-01T19:00:00", "TestOpponentC", "1234569", "0", null)]
+        public virtual void _06_CreateOpponentInformationWithDataForAllFields(string gameId, string sqlId, string date, string opponent, string opponentId, string gameType, string[] exampleTags)
+        {
+            string[] tagsOfScenario = exampleTags;
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("gameId", gameId);
+            argumentsOfScenario.Add("sqlId", sqlId);
+            argumentsOfScenario.Add("date", date);
+            argumentsOfScenario.Add("opponent", opponent);
+            argumentsOfScenario.Add("opponentId", opponentId);
+            argumentsOfScenario.Add("gameType", gameType);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("06. Create opponent information with data for all fields", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 38
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 39
+ testRunner.Given(string.Format("I create opponent with \"{0}\", \"{1}\", \"{2}\", \"{3}\", \"{4}\" & \"{5}\"", gameId, sqlId, date, opponent, opponentId, gameType), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 40
+ testRunner.Then("opponent data is created successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("07. Create opponent information with invalid data for all fields")]
+        [NUnit.Framework.TestCaseAttribute("1234567", "1234567", "2016-01-01T19:00:00", "11223344", "123456", "0", null)]
+        [NUnit.Framework.TestCaseAttribute("1234567", "1234567", "2016-01-01T19:00:00", "TestOpponentA", "asdfg", "0", null)]
+        [NUnit.Framework.TestCaseAttribute("1234567", "oooppp", "2016-01-01T19:00:00", "TestOpponentB", "1234568", "0", null)]
+        [NUnit.Framework.TestCaseAttribute("abcdefg", "1234567", "2016-01-01T19:00:00", "TestOpponentC", "1234569", "0", null)]
+        public virtual void _07_CreateOpponentInformationWithInvalidDataForAllFields(string gameId, string sqlId, string date, string opponent, string opponentId, string gameType, string[] exampleTags)
+        {
+            string[] tagsOfScenario = exampleTags;
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("gameId", gameId);
+            argumentsOfScenario.Add("sqlId", sqlId);
+            argumentsOfScenario.Add("date", date);
+            argumentsOfScenario.Add("opponent", opponent);
+            argumentsOfScenario.Add("opponentId", opponentId);
+            argumentsOfScenario.Add("gameType", gameType);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("07. Create opponent information with invalid data for all fields", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 51
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 52
+ testRunner.Given(string.Format("I create opponent with \"{0}\", \"{1}\", \"{2}\", \"{3}\", \"{4}\" & \"{5}\"", gameId, sqlId, date, opponent, opponentId, gameType), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 53
  testRunner.Then("api post to create opponent information should error", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
