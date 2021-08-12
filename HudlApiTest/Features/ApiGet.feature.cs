@@ -100,14 +100,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                             "gameId",
                             "sqlId",
                             "date",
                             "opponent",
                             "opponentId",
                             "gameType"});
-                table1.AddRow(new string[] {
+                table3.AddRow(new string[] {
                             "1234567",
                             "1234567",
                             "2016-01-01T19:00:00",
@@ -115,7 +115,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "123456",
                             "0"});
 #line 5
- testRunner.Given("create opponent information with table details", ((string)(null)), table1, "Given ");
+ testRunner.Given("create opponent information with table details", ((string)(null)), table3, "Given ");
 #line hidden
 #line 8
  testRunner.Then("opponent data is created successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -157,14 +157,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
                             "gameId",
                             "sqlId",
                             "date",
                             "opponent",
                             "opponentId",
                             "gameType"});
-                table2.AddRow(new string[] {
+                table4.AddRow(new string[] {
                             "1234567",
                             "1234567",
                             "2016-01-01T19:00:00",
@@ -172,7 +172,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "123456",
                             "0"});
 #line 13
- testRunner.Given("create opponent information with table details", ((string)(null)), table2, "Given ");
+ testRunner.Given("create opponent information with table details", ((string)(null)), table4, "Given ");
 #line hidden
 #line 16
  testRunner.Then("opponent data is created successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
