@@ -77,10 +77,8 @@ namespace HudlUiAcceptanceTests.Pages
             {
                 try
                 {
-                    Thread.Sleep(1000);
-                    isDisplayed = element.Displayed && element.Enabled;
-                    Wait.Until(e => isDisplayed = true);
-                    isDisplayed = true;
+                    Wait.Until(e => element.Displayed);
+                    isDisplayed = element.Displayed;
                 }
                 catch (NullReferenceException)
                 {
