@@ -5,7 +5,6 @@ using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Net;
-using System.Threading;
 
 namespace HudlUiAcceptanceTests.Pages
 {
